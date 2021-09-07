@@ -1,7 +1,9 @@
 import React from "react";
 import './index.scss'
-import { NavLink} from 'react-router-dom';
-import {headerLinks} from '@/common/js/commonData.js'
+import { NavLink } from 'react-router-dom';
+import { headerLinks } from '@/common/js/commonData.js'
+import { SearchOutlined } from '@ant-design/icons';
+import { Input } from 'antd';
 class Header extends React.Component {
 
 	render() {
@@ -12,14 +14,14 @@ class Header extends React.Component {
 						<div className='logo'></div>
 						<ul>
 							{
-								headerLinks.map(item=>{
-									return <li><NavLink  to="/index" >首页列表项目 </NavLink></li>
+								headerLinks.map((item, index) => {
+									return <li key={index}><NavLink to={item.link} >{item.title}</NavLink></li>
 								})
 							}
 						</ul>
 					</div>
 					<div className='header-r'>
-						2
+						<Input size="large" placeholder="音乐/视频" prefix={<SearchOutlined />} className='search'/>
 					</div>
 				</div>
 			</header>

@@ -213,5 +213,42 @@ npm install --save react-redux
 npm install sass-loader node-sass --save-dev
 ```
 
+### 3.7 配置eslint
+
+添加prettier
+
+```
+npm i prettier
+npm i eslint-plugin-prettier
+npm i eslint-config-prettier
+```
+
+[Prettier 与 ESLint 相集成](https://links.jianshu.com/go?to=https%3A%2F%2Fprettier.io%2Fdocs%2Fen%2Fintegrating-with-linters.html%23eslint)，需要安装 [`eslint-config-prettier`](https://links.jianshu.com/go?to=https%3A%2F%2Fgithub.com%2Fprettier%2Feslint-config-prettier) 和 [`eslint-plugin-prettier`](https://links.jianshu.com/go?to=https%3A%2F%2Fgithub.com%2Fprettier%2Feslint-plugin-prettier) 依赖。[`eslint-config-prettier`](https://links.jianshu.com/go?to=https%3A%2F%2Fprettier.io%2Fdocs%2Fen%2Fintegrating-with-linters.html%23disable-formatting-rules) 禁用与 Prettier 冲突的规则，[`eslint-plugin-prettier`](https://links.jianshu.com/go?to=https%3A%2F%2Fprettier.io%2Fdocs%2Fen%2Fintegrating-with-linters.html%23use-eslint-to-run-prettier) 使用 Prettier 的规则：
+
+####  方法一：修改 `package.json` 文件
+
+修改 `package.json` 文件中的 `eslintConfig` 属性：
+
+```json
+{
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "plugin:prettier/recommended"
+    ]
+  }
+}
+```
+
+####  方法二：创建 `.eslintrc.*` 文件
+
+在项目根目录（与 `package.json` 文件同级）创建 `.eslintrc.*` 文件。ESLint 的[配置文件](https://links.jianshu.com/go?to=https%3A%2F%2Feslint.org%2Fdocs%2Fuser-guide%2Fconfiguring%23configuration-file-formats)，可以是 `.eslintrc.js`、`.eslintrc.cjs`、`.eslintrc.yaml`、`.eslintrc.yml`、`.eslintrc.json`、`.eslintrc`（已弃用）或者 `package.json`（第一种方法），优先级依次递减，[层叠配置](https://links.jianshu.com/go?to=https%3A%2F%2Feslint.org%2Fdocs%2Fuser-guide%2Fconfiguring%23configuration-cascading-and-hierarchy)使用离要检测的文件最近的 `.eslintrc` 文件作为最高优先级，然后才是父目录里的配置文件，以此类推。Prettier 官方的示例配置使用 `.eslintrc.json`：
+
+```json
+{
+  "extends": ["react-app", "plugin:prettier/recommended"]
+}
+```
+
 ## 4 功能模块
 

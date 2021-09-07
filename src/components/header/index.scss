@@ -38,4 +38,23 @@
     padding-right: 20px;
     background: url('../../assets/img/sprite_01.png') no-repeat;
   }
+
+  .header-r{
+    display: flex;
+    align-items: center;
+
+    .search {
+      width: 221px;
+      height: 32px;
+      border-radius: 16px;
+      
+      input {
+        font-size: 14px;
+        font-family: '微软雅黑';
+        &::placeholder {
+          font-size: 12px;
+        }
+      }
+    }
+  }
 }

@@ -1,16 +1,15 @@
-import Header from '../components/header';
-
+import Header from "../components/header";
 const routes = [
-    {
-        path: '/',
-        component: Header,
-        routes: [
-            // {
-            //     path: '/inquiry',
-            //     component: Inquiry
-            // }
-        ]
-    }
-]
+  {
+    path: "/",
+    component: Header,
+    routes: [
+      // {
+      //     path: '/inquiry',
+      //     component: Inquiry
+      // }
+    ],
+  },
+];
 
-export default routes
+export default routes;
