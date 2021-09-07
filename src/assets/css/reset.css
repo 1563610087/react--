@@ -34,12 +34,6 @@ li {
 
 a {
   text-decoration: none;
-  color: #666;
-}
-
-a:hover {
-  color: #666;
-  text-decoration: underline;
 }
 
 i,

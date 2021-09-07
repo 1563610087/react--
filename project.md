@@ -95,5 +95,123 @@ vscode点击插件设置，选择扩展设置
 }
 ```
 
+### 3.3 路由配置
+
+安装
+
+```
+npm install --save react-router-dom
+```
+
+路由集中配置管理
+
+```
+npm install --save react-router-config
+```
+
+react-router-config主要用来帮助我们进行集中式路由的配置，在不使用react-router-config之前，我们的路由使用react-router-dom库来进行配置，类似如下代码：
+
+```jsx
+import React from 'react';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from "react-router-dom";
+import Home from './pages/Home';
+import Login from './pages/Login';
+import Backend from './pages/Backend';
+import Admin from './pages/Admin';
+
+function App() {
+  return (
+    <Router>
+      <Switch>
+        <Route path="/login" component={Login}/>
+        <Route path="/backend" component={Backend}/>
+        <Route path="/admin" component={Admin}/>
+        <Route path="/" component={Home}/>
+      </Switch>
+    </Router>
+  );
+}
+
+export default App;
+```
+
+react-router-config可以使得路由配置更加简便，类似vue中的路由配置
+
+routes.js路由配置
+
+```pgsql
+import { RouteConfig } from 'react-router-config';
+import Home from '../components/Home';
+import Inquiry from '../components/Inquiry';
+import Offer from '../components/Offer';
+
+const routes: RouteConfig = [
+    {
+        path: '/',
+        component: Home,
+        routes: [
+            {
+                path: '/inquiry',
+                component: Inquiry
+            },
+            {
+                path: '/offer',
+                component: Offer
+            }
+        ]
+    }
+]
+
+export default routes
+```
+
+index.js入口文件
+
+```javascript
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { Provider } from 'mobx-react';
+import './index.css';
+import { renderRoutes } from 'react-router-config';
+import { HashRouter } from 'react-router-dom';
+import routes from './config/routes';
+import stores from './stores/index';
+import * as serviceWorker from './serviceWorker';
+
+ReactDOM.render(
+ <HashRouter>
+     <Provider {...stores}>
+        {renderRoutes(routes)}
+     </Provider>
+ </HashRouter>,
+ document.getElementById('root')
+);
+
+// If you want your app to work offline and load faster, you can change
+// unregister() to register() below. Note this comes with some pitfalls.
+// Learn more about service workers: https://bit.ly/CRA-PWA
+serviceWorker.unregister();
+```
+
+Home组件：
+
+### 3.4 配置redux
+
+```
+npm install --save react-redux
+```
+
+### 3.5 引入antd
+
+### 3.6 引入scss
+
+```
+npm install sass-loader node-sass --save-dev
+```
+
 ## 4 功能模块
 
