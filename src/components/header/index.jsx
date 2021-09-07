@@ -28,6 +28,7 @@ class Header extends React.Component {
               prefix={<SearchOutlined />}
               className="search"
             />
+            <span className="center">创作者中心</span>
           </div>
         </div>
       </header>

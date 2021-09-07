@@ -250,5 +250,44 @@ npm i eslint-config-prettier
 }
 ```
 
+### 3.8 配置全局css变量
+
+```
+npm i craco-sass-resources-loader -D
+```
+
+配置文件craco.config.js修改
+
+```
+const sassResourcesLoader = require("craco-sass-resources-loader");
+
+const path = require("path");
+
+const resolve = (pathUrl) => path.join(__dirname, pathUrl);
+
+module.exports = {
+  webpack: {
+    alias: {
+      "@": resolve("src"),
+      "@components": resolve("src/components"),
+      "@assets": resolve("src/assets"),
+    },
+  },
+
+  plugins: [
+    {
+      plugin: sassResourcesLoader,
+
+      options: {
+        resources: ["./src/assets/css/variable.scss"],
+      },
+    },
+  ],
+};
+
+```
+
+
+
 ## 4 功能模块
 
