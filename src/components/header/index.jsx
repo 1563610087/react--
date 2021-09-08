@@ -29,6 +29,7 @@ class Header extends React.Component {
               className="search"
             />
             <span className="center">创作者中心</span>
+            <span className="login">登录</span>
           </div>
         </div>
       </header>

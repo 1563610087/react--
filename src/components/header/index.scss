@@ -61,17 +61,23 @@
       width: 100px;
       height: 32px;
       border-radius: 16px;
-      border:1px solid red;
+      border:1px solid #4F4F4F;
       line-height: 32px;
       text-align: center;
       cursor: pointer;
+      color: $font-1;
+      margin:0 20px;
 
       &:hover{
-        border:1px solid red;
-        color: $font-1;
+        border:1px solid $font-2;
+        color: $font-2;
       }
     }
 
+    .login{
+      color: $font-1;
+      cursor: pointer;
+    }
 
   }
 }

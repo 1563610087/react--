@@ -1,7 +1,7 @@
 import Header from "../components/header";
 const routes = [
   {
-    path: "/",
+    path: "/hhhh",
     component: Header,
     routes: [
       // {
