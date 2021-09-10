@@ -1,10 +1,11 @@
 import { NavBar } from "@/components";
-
-function Discover() {
+import { renderRoutes } from "react-router-config";
+function Discover(props) {
+  const { route } = props;
   return (
     <div>
       <NavBar />
-      <div>sss</div>
+      {renderRoutes(route.routes)}
     </div>
   );
 }
