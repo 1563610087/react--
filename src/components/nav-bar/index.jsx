@@ -6,13 +6,17 @@ import { NavLink } from "react-router-dom";
 function NavBar() {
   return (
     <nav className="nav-bar">
-      {dicoverMenu.map((item) => {
-        return (
-          <span key={item.title}>
-            <NavLink to={item.link}>{item.title}</NavLink>
-          </span>
-        );
-      })}
+      <ul>
+        {dicoverMenu.map((item) => {
+          return (
+            <li key={item.title}>
+              <NavLink to={item.link} activeClassName="menu-active">
+                {item.title}
+              </NavLink>
+            </li>
+          );
+        })}
+      </ul>
     </nav>
   );
 }

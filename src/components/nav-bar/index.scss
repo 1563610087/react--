@@ -3,4 +3,29 @@
   box-sizing: border-box;
   background-color: #c20c0c;
   border-bottom: 1px solid #a40011;
+
+  ul {
+    height: 35px;
+    width: 744px;
+    padding-left: 185px;
+    display: flex;
+    align-items: center;
+
+    li {
+      margin: 0 10px;
+
+      a {
+        height: 20px;
+        display: inline-block;
+        padding: 0 13px;
+        color: $font-2;
+        border-radius: 20px;
+      }
+
+      a:hover,
+      .menu-active {
+        background-color: $bg-red;
+      }
+    }
+  }
 }
