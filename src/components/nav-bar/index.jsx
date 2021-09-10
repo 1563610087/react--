@@ -3,12 +3,12 @@ import { dicoverMenu } from "@/common/js/commonData.js";
 import "./index.scss";
 import { NavLink } from "react-router-dom";
 
-function AppNavBar() {
+function NavBar() {
   return (
-    <nav>
+    <nav className="nav-bar">
       {dicoverMenu.map((item) => {
         return (
-          <span>
+          <span key={item.title}>
             <NavLink to={item.link}>{item.title}</NavLink>
           </span>
         );
@@ -17,4 +17,4 @@ function AppNavBar() {
   );
 }
 
-export default memo(AppNavBar);
+export default memo(NavBar);

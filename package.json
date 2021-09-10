@@ -25,7 +25,9 @@
     "start": "craco start",
     "build": "craco build",
     "test": "craco test",
-    "eject": "craco eject"
+    "eject": "craco eject",
+    "lint:style": "stylelint \"src/*.{css,scss}\"",
+    "fix:style": "stylelint --fix \"src/*.{css,scss}\""
   },
   "eslintConfig": {
     "extends": [
@@ -50,6 +52,8 @@
     "craco-sass-resources-loader": "^1.1.0",
     "node-sass": "^6.0.1",
     "sass-loader": "^12.1.0",
-    "sass-resources-loader": "^2.2.4"
+    "sass-resources-loader": "^2.2.4",
+    "stylelint": "^13.13.1",
+    "stylelint-config-standard": "^22.0.0"
   }
 }

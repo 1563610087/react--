@@ -1,7 +1,9 @@
+import { NavBar } from "@/components";
+
 function Discover() {
   return (
     <div>
-      <div>ss</div>
+      <NavBar />
       <div>sss</div>
     </div>
   );

@@ -250,7 +250,34 @@ npm i eslint-config-prettier
 }
 ```
 
-### 3.8 配置全局css变量
+### 3.8 配置stylelint
+
+和 eslint 类似，stylelint 是 css 界的规范大师，标准配置内置了 170 余个配置项
+
+1、vscode安装stylelint
+
+2、项目配置
+
+```
+npm i -D stylelint stylelint-config-standard
+```
+
+**配置 stylelint**
+在项目根目录建立 stylelint 配置文件 .stylelintrc.json ：
+
+```
+{
+  "extends": [
+    "stylelint-config-standard"
+  ]
+}
+```
+
+	"editor.codeActionsOnSave": {
+	  "source.fixAll.stylelint": true
+	},
+	如此一来，就可以在文件 ctrl + s 保存时自动修复不合理的 css 格式。
+### 3.9 配置全局css变量
 
 ```
 npm i craco-sass-resources-loader -D
