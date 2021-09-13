@@ -22,4 +22,15 @@ module.exports = {
       },
     },
   ],
+  devServer: {
+    proxy: {
+      "/api": {
+        target: "http://39.102.36.212:3000",
+        changeOrigin: true,
+        pathRewrite: {
+          "^/api": "",
+        },
+      },
+    },
+  },
 };

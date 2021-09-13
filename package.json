@@ -35,7 +35,8 @@
     "extends": [
       "react-app",
       "react-app/jest",
-      "plugin:prettier/recommended"
+      "plugin:prettier/recommended",
+      "plugin:react-hooks/recommended"
     ]
   },
   "browserslist": {
@@ -52,6 +53,7 @@
   },
   "devDependencies": {
     "craco-sass-resources-loader": "^1.1.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
     "node-sass": "^6.0.1",
     "sass-loader": "^12.1.0",
     "sass-resources-loader": "^2.2.4",
