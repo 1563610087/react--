@@ -323,6 +323,34 @@ Git Hooks是定制化的脚本程序，所以它实现的功能与相应的git�
 4.服务器代码有新的更新的时候通知所有开发成员
 5.代码提交后的项目自动打包（git receive之后） 等等...
 
+### 3.11 封装请求axiso
+
+```
+npm i axios
+```
+
+### 3.12  配置环境变量
+
+#### 1 创建文件
+
+文档https://create-react-app.dev/docs/adding-custom-environment-variables/#adding-development-environment-variables-in-env
+
+必须以 `REACT_APP_` 开头创建自定义环境变量
+
+```
+.env：默认。
+.env.local：本地覆盖。除 test 之外的所有环境都加载此文件。
+.env.development, .env.test, .env.production：设置特定环境。
+.env.development.local, .env.test.local, .env.production.local：设置特定环境的本地覆盖。
+左侧的文件比右侧的文件具有更高的优先级：
+
+npm start: .env.development.local, .env.development, .env.local, .env
+npm run build: .env.production.local, .env.production, .env.local, .env
+npm test: .env.test.local, .env.test, .env (注意没有 .env.local )
+```
+
+#### 2 创建执行脚本命令
+
 ## 性能优化
 
 1 memo

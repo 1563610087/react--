@@ -1,5 +1,11 @@
+import Banner from "./components/banner";
+
 function Recommend() {
-  return <div>hhh</div>;
+  return (
+    <div>
+      <Banner />
+    </div>
+  );
 }
 
 export default Recommend;
