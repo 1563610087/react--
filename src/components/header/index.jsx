@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import "./index.scss";
 import { NavLink } from "react-router-dom";
 import { headerLinks } from "@/common/js/commonData.js";
@@ -37,4 +37,4 @@ class Header extends React.Component {
   }
 }
 
-export default Header;
+export default memo(Header);

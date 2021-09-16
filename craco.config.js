@@ -8,6 +8,7 @@ module.exports = {
   webpack: {
     alias: {
       "@": resolve("src"),
+      "~@": resolve("src"),
       "@components": resolve("src/components"),
       "@assets": resolve("src/assets"),
     },

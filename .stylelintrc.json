@@ -1,5 +1,9 @@
 {
   "extends": [
     "stylelint-config-standard"
-  ]
+  ],
+  "rules": {
+    "number-leading-zero":null,
+    "value-keyword-case":"upper"
+  }
 }

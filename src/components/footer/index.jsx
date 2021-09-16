@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React, { Fragment, memo } from "react";
 import { footerLinks, footerImages } from "@/common/js/commonData.js";
 import "./index.scss";
 
@@ -57,4 +57,4 @@ const Footer = function () {
   );
 };
 
-export default Footer;
+export default memo(Footer);
