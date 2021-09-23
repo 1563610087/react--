@@ -204,12 +204,26 @@ Home组件：
 1、安装
 
 ```
+npm install --save redux
 npm install --save react-redux
+npm install --save redux-immutable//用于替代数据的深拷贝，优化性能
 ```
 
 2、根组件引入
 
+```jsx
+import { Provider } from 'react-redux';//引入Provider
+import store from './store';//引入数据仓库
 
+<Provider store={store}>
+    //根组件用provider包裹 
+</Provider>
+
+```
+
+3 、创建store仓库
+
+创建redux三个文件store.js,reducer.js.action.js
 
 ### 3.5 引入antd
 
