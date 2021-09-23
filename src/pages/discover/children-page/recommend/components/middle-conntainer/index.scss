@@ -1,0 +1,13 @@
+.middle-container {
+  width: 980px;
+  margin: 0 AUTO;
+  display: FLEX;
+
+  .left {
+    flex: 0 0 730px;
+  }
+
+  .right {
+    flex: 1;
+  }
+}

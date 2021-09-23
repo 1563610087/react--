@@ -1,0 +1,19 @@
+.singer {
+  padding: 15px 20px;
+
+  & > div:nth-child(1) {
+    height: 24px;
+    border-bottom: 1px SOLID #ccc;
+    display: FLEX;
+    justify-content: SPACE-BETWEEN;
+
+    & > span:nth-child(1) {
+      color: #333;
+      font-weight: BOLD;
+    }
+
+    & > span:nth-child(2) {
+      color: #666;
+    }
+  }
+}
