@@ -1,0 +1,22 @@
+.cover-wrapper {
+  padding: 20px 0;
+  display: FLEX;
+  flex-wrap: WRAP;
+  justify-content: SPACE-BETWEEN;
+
+  .img-box {
+    width: 140px;
+    margin-bottom: 30px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .text-name {
+    font-size: 14px;
+    color: #000;
+    cursor: POINTER;
+    margin: 8px 0 3px;
+  }
+}

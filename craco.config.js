@@ -24,9 +24,10 @@ module.exports = {
     },
   ],
   devServer: {
+    port: 8080,
     proxy: {
       "/api": {
-        target: "http://39.102.36.212:3000",
+        target: "http://localhost:3000",
         changeOrigin: true,
         pathRewrite: {
           "^/api": "",

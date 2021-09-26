@@ -11,11 +11,11 @@ const routes = [
     path: "/discover",
     component: Discover,
     routes: [
-      // {
-      //   path: "/discover",
-      //   exact: true,
-      //   render: () => <Redirect to="/discover/recommend" />,
-      // },
+      {
+        path: "/discover",
+        exact: true,
+        render: () => <Redirect to="/discover/recommend" />,
+      },
       { path: "/discover/recommend", component: Recommend },
       // { path: "/discover/ranking", component: JMToplist },
       // {

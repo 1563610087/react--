@@ -24,7 +24,6 @@ function Banner() {
   const style = {
     backgroundImage: `url(${bgImage})`,
   };
-  console.log(style);
   return (
     <div className="banner" style={style}>
       <div className="banner-wrapper">

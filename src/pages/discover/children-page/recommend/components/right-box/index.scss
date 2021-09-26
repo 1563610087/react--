@@ -1,0 +1,26 @@
+.user-login-box {
+  height: 126px;
+  background: url('~@/assets/img/sprite_02.png') NO-REPEAT;
+  background-position: 0 0;
+
+  p {
+    width: 205px;
+    margin: 0 AUTO;
+    padding: 16px 0;
+    line-height: 22px;
+    color: #666;
+  }
+
+  .user-login {
+    width: 100px;
+    color: #fff;
+    display: BLOCK;
+    margin: 0 AUTO;
+    background: url('~@/assets/img/sprite_02.png') NO-REPEAT 0 9999px;
+    background-position: 0 -195px;
+
+    // &:hover {
+    //   background-position: -110px -195px;
+    // }
+  }
+}

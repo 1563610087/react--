@@ -5,4 +5,4 @@ export const getBanner = (params) =>
 
 //获取热门推荐歌单
 export const getPlayList = (params) =>
-  request.get("/personalized", { params: params });
+  request.get("/api/personalized", { params: params });

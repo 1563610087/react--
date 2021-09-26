@@ -1,0 +1,35 @@
+.hot-title {
+  display: FLEX;
+  justify-content: SPACE-BETWEEN;
+  height: 33px;
+  line-height: 33px;
+  padding: 0 10px 0 34px;
+  border-bottom: 2px solid #c10d0c;
+  background: url('~@/assets/img/sprite_02.png') NO-REPEAT -226px -156px;
+
+  a {
+    float: LEFT;
+    font-size: 20px;
+    font-weight: NORMAL;
+    line-height: 28px;
+    margin-right: 10px;
+
+    &:hover {
+      color: #333;
+    }
+  }
+
+  .category {
+    padding: 0 10px;
+    cursor: POINTER;
+  }
+
+  i {
+    display: INLINE-BLOCK;
+    width: 12px;
+    margin-left: 8px;
+    height: 20px;
+    vertical-align: TEXT-TOP;
+    background: url('~@/assets/img/sprite_02.png') NO-REPEAT 0 -240px;
+  }
+}
