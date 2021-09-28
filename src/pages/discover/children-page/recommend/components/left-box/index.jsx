@@ -1,10 +1,11 @@
 import HotRecommend from "./hotRecommend";
+import NewDisc from "./new-disc";
 import "./index.scss";
 function LeftBox() {
   return (
     <div className="left-box">
       <HotRecommend />
-      <div>sss</div>
+      <NewDisc />
     </div>
   );
 }

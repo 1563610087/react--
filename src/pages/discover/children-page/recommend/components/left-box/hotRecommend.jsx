@@ -14,7 +14,6 @@ function HotRecommend(props) {
     dispatch(getPlaylistAction({ limit: 8 }));
   }, [dispatch]);
 
-  console.log(recommendPlaylist);
   return (
     <>
       <ThemeHeader title={"热门推荐"} tabs={tabs} />

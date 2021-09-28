@@ -8,8 +8,51 @@
     width: 140px;
     margin-bottom: 30px;
 
+    .img-div {
+      position: RELATIVE;
+    }
+
+    .cover-mask {
+      width: 140px;
+      height: 140px;
+      position: ABSOLUTE;
+      top: 0;
+      left: 0;
+      background: url('~@/assets/img/sprite_cover.png') NO-REPEAT 0 0;
+    }
+
     img {
       width: 100%;
+    }
+
+    .bottom {
+      height: 27px;
+      line-height: 27px;
+      width: 100%;
+      position: ABSOLUTE;
+      bottom: 0;
+      color: #ccc;
+      display: FLEX;
+      justify-content: SPACE-BETWEEN;
+      align-items: CENTER;
+      background-position: 0 -537px;
+
+      .headset {
+        display: INLINE-BLOCK;
+        width: 20px;
+        height: 10px;
+        margin: 0 5px;
+        background-position: 0 -24px;
+      }
+
+      .play-icon {
+        display: INLINE-BLOCK;
+        width: 20px;
+        height: 20px;
+        margin-right: 5px;
+        background-position: 0 0;
+        cursor: POINTER;
+      }
     }
   }
 

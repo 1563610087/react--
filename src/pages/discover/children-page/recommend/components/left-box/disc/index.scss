@@ -1,0 +1,17 @@
+.new-disc {
+  height: 184px;
+  padding-left: 16px;
+  background: #f5f5f5;
+  border: 1px solid #fff;
+  margin: 20px 0;
+
+  .disc-box {
+    width: 118px;
+    height: 150px;
+
+    .disc-div {
+      width: 118px;
+      height: 100px;
+    }
+  }
+}

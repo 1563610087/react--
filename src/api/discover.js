@@ -6,3 +6,6 @@ export const getBanner = (params) =>
 //获取热门推荐歌单
 export const getPlayList = (params) =>
   request.get("/api/personalized", { params: params });
+
+//获取新碟上架
+export const getNewDisc = () => request.get("/api/album/newest");
