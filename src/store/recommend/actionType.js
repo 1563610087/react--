@@ -1,2 +1,5 @@
 export const GET_RECOMMEND_PLAYLIST = "GET_RECOMMEND_PLAYLIST";
 export const GET_NEW_DISC = "GET_NEW_DISC";
+export const GET_TOP_LIST = "GET_TOP_LIST";
+export const GET_NEW_SONG = "GET_NEW_SONG";
+export const GET_ORIGIN_SONG = "GET_ORIGIN_SONG";

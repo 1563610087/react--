@@ -1,12 +1,12 @@
 .banner {
   &-wrapper {
-    position: relative;
+    position: RELATIVE;
     width: 980px;
     height: 284px;
-    margin: 0 auto;
+    margin: 0 AUTO;
 
     .left {
-      display: inline-block;
+      display: INLINE-BLOCK;
       width: 730px;
       height: 284px;
 
@@ -17,13 +17,13 @@
     }
 
     .right {
-      display: inline-block;
+      display: INLINE-BLOCK;
       width: 250px;
       height: 100%;
-      vertical-align: top;
+      vertical-align: TOP;
 
       a {
-        display: inline-block;
+        display: INLINE-BLOCK;
         height: 100%;
         width: 100%;
         background: url('~@/assets/img/download.png');
@@ -32,14 +32,14 @@
 
     .btn {
       width: 1100px;
-      position: absolute;
+      position: ABSOLUTE;
       top: 45%;
       left: -62px;
-      display: flex;
-      justify-content: space-between;
+      display: FLEX;
+      justify-content: SPACE-BETWEEN;
 
       span {
-        display: inline-block;
+        display: INLINE-BLOCK;
         height: 71px;
         width: 40px;
       }

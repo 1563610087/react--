@@ -1,0 +1,88 @@
+.player-wrapper {
+  position: FIXED;
+  bottom: 0;
+  height: 53px;
+  width: 100%;
+  color: WHITE;
+  padding-top: 5px;
+  background: url('~@/assets/img/playbar_sprite.png') REPEAT 0 0;
+
+  .box {
+    height: 50px;
+    display: FLEX;
+  }
+
+  .pre,
+  .next {
+    width: 28px;
+    height: 28px;
+    margin-right: 8px;
+    margin-top: 5px;
+    cursor: POINTER;
+    display: INLINE-BLOCK;
+  }
+
+  .pre {
+    background-position: 0 -130px;
+
+    &:hover {
+      background-position: -30px -130px;
+    }
+  }
+
+  .next {
+    background-position: -80px -130px;
+
+    &:hover {
+      background-position: -110px -130px;
+    }
+  }
+
+  .play {
+    width: 36px;
+    height: 36px;
+    cursor: POINTER;
+    display: INLINE-BLOCK;
+    margin-right: 8px;
+    background-position: 0 -165px;
+    // background-position: 0 ${props => (props.isPlaying ? '-165px' : '-204px')};
+    margin-top: 0;
+
+    // &:hover {
+    //   background-position: -40px
+    //     ${props => (props.isPlaying ? '-165px' : '-204px')};
+    // }
+  }
+
+  .box-middle {
+    display: FLEX;
+    width: 600px;
+    border: 1px SOLID RED;
+
+    &-img {
+      flex: 0 0 35px;
+      height: 35px;
+      border-radius: 5px;
+      overflow: HIDDEN;
+    }
+
+    &-div {
+      .artist {
+        margin-left: 15px;
+        color: #9b9b9b;
+      }
+
+      .hyperlinks {
+        display: INLINE-BLOCK;
+        width: 15px;
+        height: 15px;
+        cursor: POINTER;
+        background-position: -109px -102px;
+
+        &:hover {
+          background-position: -129px -102px;
+        }
+      }
+    }
+  }
+}

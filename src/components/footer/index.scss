@@ -3,11 +3,13 @@
     line-height: 24px;
   }
 
+  border-top: 1px solid #d3d3d3;
+
   .f-box {
     width: 980px;
-    height: 115px;
-    margin: 0 auto;
-    display: flex;
+    height: 170px;
+    margin: 0 AUTO;
+    display: FLEX;
 
     .f-left {
       flex: 1;
@@ -35,9 +37,9 @@
 
     .f-right {
       flex: 0 0 420px;
-      display: flex;
+      display: FLEX;
       padding: 34px 0 0 0;
-      justify-content: space-between;
+      justify-content: SPACE-BETWEEN;
 
       /* stylelint-disable no-descending-specificity */
       :nth-child(1) a {
@@ -61,7 +63,7 @@
         height: 70px;
 
         a {
-          display: block;
+          display: BLOCK;
           width: 50px;
           height: 45px;
           background-image: url(../../assets/img/sprite_footer_02.png);
@@ -71,7 +73,7 @@
 
       .title {
         margin-top: 5px;
-        display: block;
+        display: BLOCK;
         width: 52px;
         height: 10px;
         background-image: url(../../assets/img/sprite_footer_01.png);

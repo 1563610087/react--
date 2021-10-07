@@ -1,0 +1,8 @@
+.rank-box {
+  padding: 20px 0;
+  display: FLEX;
+
+  & > div {
+    flex: 1;
+  }
+}

@@ -1,0 +1,53 @@
+.toplist {
+  background-image: url('~@/assets/img/recommend-top-bg.png');
+
+  .top-warpper {
+    height: 120px;
+    display: FLEX;
+    padding: 20px;
+
+    .top-left {
+      img {
+        width: 80px;
+        height: 80px;
+      }
+    }
+
+    .top-right {
+      padding: 6px 0 0 10px;
+
+      h3 {
+        font-weight: BOLD;
+      }
+    }
+  }
+
+  .middle-song {
+    li {
+      height: 32px;
+      line-height: 32px;
+      padding-left: 20px;
+      cursor: POINTER;
+
+      & > span:nth-child(1) {
+        display: INLINE-BLOCK;
+        width: 35px;
+        text-align: CENTER;
+        font-size: 16px;
+      }
+
+      & > span:nth-child(2):hover {
+        text-decoration: UNDERLINE;
+      }
+
+      &:last-child {
+        text-align: RIGHT;
+        padding-right: 32px;
+      }
+    }
+  }
+
+  .rank-top {
+    color: #c10d0c;
+  }
+}

@@ -12,3 +12,13 @@ export function getCount(count) {
     return Math.floor(count / 10000000) / 10 + "亿";
   }
 }
+
+/**
+ * 对图片格式化
+ * @param {string}} imgUrl
+ * @param {*} size
+ * @returns
+ */
+export function getSizeImage(imgUrl, size) {
+  return `${imgUrl}?param=${size}x${size}`;
+}
